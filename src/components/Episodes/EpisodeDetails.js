@@ -25,7 +25,7 @@ const EpisodeDetails = ({match}) => {
       // 
       }
 			fetchItems();
-		}, [])
+		}, [match.params.id])
 	     
 
 	    

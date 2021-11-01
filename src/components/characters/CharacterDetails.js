@@ -56,7 +56,7 @@ const CharacterDetails = ({match}) => {
 
 
       	fetchItems()
-      }, [])
+      }, [match.params.id, match.params.name])
 
 	return isLoading ? (<Loading />) :(
 			<div>
