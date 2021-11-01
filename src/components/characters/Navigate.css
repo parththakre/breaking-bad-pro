@@ -1,0 +1,30 @@
+a:link, a:visited {
+  background-color: none;
+  color: white;
+  /*border: 2px solid green;*/
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-grid;
+  margin-bottom: 10px;
+  
+}
+
+a:hover {
+  background-color: green;
+  color: white;
+}
+
+a:active{
+  color: blue;
+}
+
+ul{
+	text-align: center;
+}
+
+.nav {
+  font-style: italic;
+  font-family: sans-serif;
+  font-size: 25px;
+}

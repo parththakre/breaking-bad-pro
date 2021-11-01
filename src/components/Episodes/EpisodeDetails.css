@@ -1,0 +1,15 @@
+.float-container {
+    width: auto;
+}
+
+.float-child {
+    width: auto;
+    float: left;
+    padding-top: 10px;
+    padding-left: 150px;
+}
+.eplist {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}

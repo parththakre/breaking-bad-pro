@@ -1,0 +1,45 @@
+
+
+.Detscontainer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-top: 20px;
+}
+
+.image {
+   	align-content: left;
+    border-style: groove;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.text {
+	float: left;
+  font-size: 20px;
+  padding-left: 20px;
+  justify-content: center;
+  text-align: left;
+  vertical-align: top;
+  padding-left: 40px;
+  padding-bottom: 5px;
+  line-height: 200%;
+
+}
+p{
+	line-height: 1.6;
+	list-style-type: decimal;
+	padding-left: 10px;
+}
+li {
+	list-style-type: none;}
+
+h1 { color: #b48608; 
+	font-family: 'Droid serif', serif;
+	 font-size: 36px;
+	  font-weight: 400;
+	   font-style: italic;
+	    line-height: 44px; 
+	    margin: 0 0 12px; 
+	    text-align: center;
+	}
