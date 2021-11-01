@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import axios from 'axios'
 import './EpisodeDetails.css'
 import Loading from '../ui/Loading'
 
@@ -12,11 +11,7 @@ const EpisodeDetails = ({match}) => {
 
 	     
 		useEffect(() => {
-			fetchItems();
-		}, [])
-	     
-
-	    const fetchItems = async () => {
+			const fetchItems = async () => {
 
       	const getEpisodeDets = await fetch(`https://www.breakingbadapi.com/api/episodes/${match.params.id}`);	
         //console.log(getEpisodeDets)
@@ -29,6 +24,11 @@ const EpisodeDetails = ({match}) => {
         setIsLoading(false)
       // 
       }
+			fetchItems();
+		}, [])
+	     
+
+	    
 
 
 

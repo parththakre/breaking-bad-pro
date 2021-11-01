@@ -1,16 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Header from './components/ui/Header'
 import CharacterGrid from './components/characters/CharacterGrid'
-import Search from './components/ui/Search'
 import Navigate from './components/characters/Navigate'
 import CharacterDetails from './components/characters/CharacterDetails'
 import EpisodeDetails from './components/Episodes/EpisodeDetails'
 import breakingbad from './img/breaking-bad2.jpg'
 
-import axios from 'axios'
 import './App.css';
 import Episodes from './components/Episodes/EpisodesList'
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 const App = () => {
 

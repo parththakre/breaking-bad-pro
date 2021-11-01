@@ -11,7 +11,10 @@ const CharacterDetails = ({match}) => {
 	const [ isLoading, setIsLoading] = useState(true)
 
 
-      const fetchItems = async () => {
+      
+      useEffect(() => {
+
+      		const fetchItems = async () => {
         
         var randomQuotes = [];
         var quotes = [];
@@ -50,7 +53,8 @@ const CharacterDetails = ({match}) => {
         	}))
 
       }
-      useEffect(() => {
+
+
       	fetchItems()
       }, [])
 
