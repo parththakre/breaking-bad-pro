@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/breaking-bad-pro/static/css/main.e98486a9.chunk.css",
-    "main.js": "/breaking-bad-pro/static/js/main.facace04.chunk.js",
-    "main.js.map": "/breaking-bad-pro/static/js/main.facace04.chunk.js.map",
+    "main.js": "/breaking-bad-pro/static/js/main.a5698550.chunk.js",
+    "main.js.map": "/breaking-bad-pro/static/js/main.a5698550.chunk.js.map",
     "runtime-main.js": "/breaking-bad-pro/static/js/runtime-main.281ea7b9.js",
     "runtime-main.js.map": "/breaking-bad-pro/static/js/runtime-main.281ea7b9.js.map",
     "static/js/2.ae3614c2.chunk.js": "/breaking-bad-pro/static/js/2.ae3614c2.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.281ea7b9.js",
     "static/js/2.ae3614c2.chunk.js",
     "static/css/main.e98486a9.chunk.css",
-    "static/js/main.facace04.chunk.js"
+    "static/js/main.a5698550.chunk.js"
   ]
 }
