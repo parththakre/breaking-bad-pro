@@ -13,18 +13,12 @@ const EpisodesList = () => {
     useEffect(() => {
       const fetchItems = async () => {
         const result = await axios(`https://www.breakingbadapi.com/api/episodes`)
-
-      //  console.log(result.data)
         setItems(result.data)
         setIsLoading(false)
       }
 
       fetchItems()
       }, [])
-
-
-
-	//console.log(items)
 	
 	return isLoading ? (<Loading />) : (
 		<div className='container'>

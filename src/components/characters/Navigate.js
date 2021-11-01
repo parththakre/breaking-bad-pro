@@ -6,9 +6,9 @@ const Navigate = () => {
 	return (
 		<div className = "nav">
 		<ul>
-			<button><Link to="/">Home</Link></button>
-			<button><Link to="/episodes">Episodes</Link></button>
-			<button><Link to="/characters">Characters</Link></button>
+			<button class ="button"><Link to="/">Home</Link></button>
+			<button class ="button"><Link to="/episodes">Episodes</Link></button>
+			<button class ="button"><Link to="/characters">Characters</Link></button>
 		</ul>
 		</div>
 	)

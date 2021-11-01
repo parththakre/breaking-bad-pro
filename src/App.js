@@ -41,5 +41,5 @@ const Home = () => (
   </div>
 
   );
-//isLoading={isLoading} items={items}
+
 export default App;

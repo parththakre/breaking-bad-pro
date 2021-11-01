@@ -2,7 +2,7 @@ a:link, a:visited {
   background-color: none;
   color: white;
   /*border: 2px solid green;*/
-  padding: 10px 20px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-grid;
@@ -12,7 +12,7 @@ a:link, a:visited {
 
 
 a:active{
-  color: blue;
+  color: #2eb7e5;
 }
 
 ul{
@@ -23,19 +23,31 @@ ul{
   font-style: italic;
   font-family: sans-serif;
   font-size: 25px;
+  padding-bottom: 20px;
 }
 
-button {
-  background-color: black; /* Green */
-  border: none;
-  border-radius: 12px;
-  color: white;
-  padding: 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: serif;
-  font-size: 20px;
-  margin: 2px 2px;
+.button {
+  width: 140px;
+  height: 45px;
+  font-family: sans-serif;
+  font-size: 15px;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #0c612b;
+  border: solid white;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
   cursor: pointer;
+  outline: none;
+  padding-right: 5px;
+  margin-right: 16px;
+  }
+
+.button:hover {
+  background-color: #2eb7e5;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }

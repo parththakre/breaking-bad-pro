@@ -14,12 +14,9 @@ const EpisodeDetails = ({match}) => {
 			const fetchItems = async () => {
 
       	const getEpisodeDets = await fetch(`https://www.breakingbadapi.com/api/episodes/${match.params.id}`);	
-        //console.log(getEpisodeDets)
-        const items = await getEpisodeDets.json();
-        //console.log(items)
-       // const result = await axios(`https://www.breakingbadapi.com/api/episodes/${match.params.id}`)
 
-      //  console.log(result.data)
+        const items = await getEpisodeDets.json();
+
         setItems(items)
         setIsLoading(false)
       // 
@@ -61,7 +58,7 @@ const EpisodeDetails = ({match}) => {
 		           				<li><i>
 		             				 <strong style={{color:'bisque', 'font-family':'serif'}}>Characters Appeared :</strong>
 		             				 <section className="eplist">				
-		             				  	{items.characters.map(character => <small><ul>{character}</ul></small>)}
+		             				  	{items.characters.map(character => <small><ul style={{'text-align':'left'}}>{character}</ul></small>)}
 		             				  </section>
 
 		           		 		</i></li>

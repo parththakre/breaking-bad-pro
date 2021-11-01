@@ -4,7 +4,6 @@ import './CharacterDetails.css'
 import Loading from '../ui/Loading'
 
 const CharacterDetails = ({match}) => {
-	//console.log(match);
 
 	const [ items, setItems] = useState([])
 	const [ quotes, setQuotes] = useState([])
@@ -24,7 +23,6 @@ const CharacterDetails = ({match}) => {
         const charQuotes = `https://www.breakingbadapi.com/api/quote/random?author=${match.params.name.replace(/\s/g, '+')}`;	
         const getDets = axios.get(charDets)
         
-        //console.log(getDets)
         
         for(var i=0;i<5;i++){
         	getQuotes = axios.get(charQuotes);
@@ -33,22 +31,17 @@ const CharacterDetails = ({match}) => {
       
         axios.all([getDets,randomQuotes[0],randomQuotes[1], randomQuotes[2],randomQuotes[3],randomQuotes[4] ]).then(
         	axios.spread((...allData) => {
-        //		console.log(allData)
         		const details = allData[0].data
         		
-        		//quotes.push(allData[1].data[0].quote)
         		
         		for(var i=1;i<6;i++){
         			if(allData[i].data[0])
         				quotes.push(allData[i].data[0].quote)
         		}
-        	
 
-        	//	console.log(quotes)
 
         		setItems(details)
         		setQuotes(quotes)
-        	//	console.log(quotes)
         		setIsLoading(false)
         	}))
 
